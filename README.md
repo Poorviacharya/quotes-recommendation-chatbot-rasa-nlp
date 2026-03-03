@@ -42,6 +42,10 @@ http://127.0.0.1:8000
 rasa run --enable-api --cors "*"
 
 
+### Demo Video
+[Watch the demo here](https://youtu.be/_XRigj9ankU)
+
+
 ## Example Inputs
 - "motivate me"
 - "love quote"
