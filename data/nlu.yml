@@ -1,0 +1,51 @@
+version: "3.1"
+
+nlu:
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - good morning
+    - good evening
+    - hey there
+    - ohh great
+    - nice to meet you
+
+- intent: motivate
+  examples: |
+    - motivate me
+    - i need motivation
+    - give me motivational quote
+    - inspire me
+    - i feel lazy
+    - i feel sad
+    - sad
+    - sad quote
+    - cheer me up
+
+- intent: love
+  examples: |
+    - love quote
+    - love
+    - give me love quote
+    - romantic quote
+    - something about love
+    - relationship quote
+
+- intent: success
+  examples: |
+    - success quote
+    - quote about success
+    - how to succeed
+    - inspire me for success
+    - success motivation
+
+- intent: funny
+  examples: |
+    - funny quote
+    - make me laugh
+    - tell me something funny
+    - joke quote
+    - funny

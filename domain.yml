@@ -1,0 +1,33 @@
+version: "3.1"
+
+intents:
+  - greet
+  - motivate
+  - love
+  - success
+  - funny
+
+responses:
+
+  utter_greet:
+  - text: "Hello! I can give you motivational, love, success, or funny quotes."
+
+  utter_motivate:
+  - text: "Believe in yourself and all that you are."
+  - text: "Push yourself because no one else will do it for you."
+
+  utter_love:
+  - text: "Love is composed of a single soul inhabiting two bodies."
+  - text: "Where there is love, there is life."
+
+  utter_success:
+  - text: "Success usually comes to those who are too busy to be looking for it."
+  - text: "Don't be afraid to give up the good to go for the great."
+
+  utter_funny:
+  - text: "I am not lazy, I am on energy-saving mode."
+  - text: "My bed and I love each other, but my alarm clock hates us."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

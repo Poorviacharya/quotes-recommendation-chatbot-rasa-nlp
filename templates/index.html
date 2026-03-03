@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quotes Recommendation Chatbot</title>
+</head>
+
+<body>
+
+<h2>Quotes Recommendation Chatbot 🤖</h2>
+
+<div id="chatbox" style="border:1px solid black; width:400px; height:300px; overflow:auto; padding:10px;"></div>
+
+<br>
+
+<input type="text" id="userInput" placeholder="Type message">
+<button onclick="sendMessage()">Send</button>
+
+<script>
+async function sendMessage() {
+
+let message = document.getElementById("userInput").value;
+
+let response = await fetch("/send_message", {   // <-- changed
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    "message": message
+  })
+});
+
+let data = await response.json();
+
+document.getElementById("chatbox").innerHTML += "<p><b>You:</b> " + message + "</p>";
+
+data.forEach(bot => {
+document.getElementById("chatbox").innerHTML += "<p><b>Bot:</b> " + bot.text + "</p>";
+});
+
+document.getElementById("userInput").value = "";
+}
+</script>
+
+</body>
+</html>
