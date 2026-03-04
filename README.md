@@ -43,7 +43,7 @@ rasa run --enable-api --cors "*"
 
 
 ### Demo Video
-[Watch the demo here](https://youtu.be/_XRigj9ankU)
+[Watch the demo here](https://youtu.be/VNxvO4h86hw)
 
 
 ## Example Inputs
